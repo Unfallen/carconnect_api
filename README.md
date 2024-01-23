@@ -49,7 +49,7 @@ and the backend will be running at http://localhost:5000.
 1. **Data Storage:**
     - For simplicity, customer data is stored in a text file (customerData.txt) in JSON format. \
    In a production environment, a database (e.g., MongoDB) would be more appropriate.
-2. **Security Measures:** Node.js server handling API requests.
+2. **Security Measures:**
     - The code has been enhanced with basic security measures, including input validation, secure headers, \
    rate limiting, CORS protection, HTTPS (recommended for production), logging, and client-side input validation.
 3. **Secure Password Handling:**
