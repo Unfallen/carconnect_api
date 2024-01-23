@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# Car Connect API Assessment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This simple App was created as a solution to Technical Assessment. \
+The goal of the challenge is to build a basic landing page capturing customer details and sending the data to an API.
 
-## Available Scripts
+## Technologies Used
 
-In the project directory, you can run:
+- Frontend: React.js
+- Backend: Node.js (Express)
+## Getting Started
+1. **Clone the Repository:**
+```bash
+git clone https://github.com/unfallen/carconnect_api
+cd carconnect_api
+```
+2. **Install Dependencies:**
+```bash
+cd frontend
+npm install
+cd ../backend
+npm install
+```
+3. **Run the Application**
+   - Start the frontend(React)
+     ```bash
+     cd frontend
+     npm start
+     ```
 
-### `npm start`
+   - Start the backend(Node.js/Express)
+     ```bash
+     cd backend
+     node server.js
+     ```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The frontend will be accessible at http://localhost:3000, \
+and the backend will be running at http://localhost:5000.
 
-### `npm test`
+## Code Structure
+- `fronted/`: React.js application for the app
+  - `src/`: Contains React components and other frontend assets.
+  - `public/`: Static files served by React.
+- `backend/`: Node.js server handling API requests.
+  - `server.js`: Main server file.
+  - `customerData.txt`: Text file to store customer data.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Assumptions
+1. **Data Storage:**
+    - For simplicity, customer data is stored in a text file (customerData.txt) in JSON format. \
+   In a production environment, a database (e.g., MongoDB) would be more appropriate.
+2. **Security Measures:** Node.js server handling API requests.
+    - The code has been enhanced with basic security measures, including input validation, secure headers, \
+   rate limiting, CORS protection, HTTPS (recommended for production), logging, and client-side input validation.
+3. **Secure Password Handling:**
+    - If the application involves user authentication in the future, \
+   use a secure password hashing library (e.g., bcrypt) on the backend to securely store and compare passwords.
+4. **Error Handling:**
+    - Basic error handling is demonstrated, but in a production environment, \
+   more robust error handling and logging would be necessary.
+5. **Frontend Styling:**
+    - Minimal styling is applied to the frontend. In a production scenario, a CSS framework or \
+   a more sophisticated styling approach would be used.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## What's Next
+- Implement further security measures as needed.
+- Integrate a database for storing customer data securely.
+- Enhance error handling and implement more detailed logging.
+- Add user authentication for secure data access.
+- Deploy the application to a cloud service (e.g., AWS).
